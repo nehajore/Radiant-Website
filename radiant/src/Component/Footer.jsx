@@ -1,6 +1,8 @@
 import "./Footer.css";
 import logo from "../assets/images/logo.png";
 
+import { Link } from "react-router-dom";
+
 import {
   FaWhatsapp,
   FaInstagram,
@@ -8,6 +10,8 @@ import {
   FaLinkedinIn,
   FaYoutube,
 } from "react-icons/fa";
+
+import { SiLinktree } from "react-icons/si";
 
 const Footer = () => {
   const whatsappNumber = "919422547718";
@@ -20,8 +24,14 @@ const Footer = () => {
       <div className="footer-container">
         {/* Column 1: Brand */}
         <div className="footer-brand">
-          <img src={logo} alt="Radiant Multimedia Logo" className="footer-logo" />
+          <img
+            src={logo}
+            alt="Radiant Multimedia Logo"
+            className="footer-logo"
+          />
+
           <h3>Radiant Multimedia</h3>
+
           <p>
             We help businesses grow with smart digital marketing, creative
             branding, and result-driven solutions.
@@ -35,12 +45,12 @@ const Footer = () => {
         <div className="footer-links">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/portfolio">Portfolio</a></li>
-            <li><a href="/pricing">Pricing</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/services">Services</Link></li>
+            <li><Link to="/portfolio">Portfolio</Link></li>
+            <li><Link to="/pricing">Pricing</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
 
@@ -57,36 +67,55 @@ const Footer = () => {
         </div>
 
         {/* Column 4: Contact */}
-       {/* Column 4: Contact + Social Media */}
-<div className="footer-contact">
-  <h4>Contact Us</h4>
-  <p>📞 +91 94225 47718 / 8087043258</p>
-  <p>📧 radiantmultimedia5@gmail.com</p>
-  <p>📍 Pune, India</p>
+        <div className="footer-contact">
+          <h4>Contact Us</h4>
+          <p>📞 +91 94225 47718 / 8087043258</p>
+          <p>📧 radiantmultimedia5@gmail.com</p>
+          <p>📍 Pune, India</p>
 
-  {/* ✅ Follow Us */}
-  <h4 className="follow-title">Follow Us</h4>
+          <h4 className="follow-title">Follow Us</h4>
 
-  <div className="footer-social">
-    
+          <div className="footer-social">
+           
 
-    <a href="https://www.instagram.com/radiantmultimedia?igsh=NXY2YzcxaGs3aXc0" target="_blank" rel="noreferrer" aria-label="Instagram">
-      <FaInstagram />
-    </a>
+            <a
+              href="https://www.instagram.com/radiantmultimedia?igsh=NXY2YzcxaGs3aXc0"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Instagram"
+            >
+              <FaInstagram />
+            </a>
 
-    <a href="https://www.facebook.com/Radiantmultimedia" target="_blank" rel="noreferrer" aria-label="Facebook">
-      <FaFacebookF />
-    </a>
+            <a
+              href="https://www.facebook.com/Radiantmultimedia"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Facebook"
+            >
+              <FaFacebookF />
+            </a>
 
-    <a href="https://linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
-      <FaLinkedinIn />
-    </a>
-    
+            <a
+              href="https://www.linkedin.com/in/radiant-multimedia-b8a5473a2/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedinIn />
+            </a>
 
-  
-  </div>
-</div>
-
+            <a
+              href="https://linktr.ee/DigiMultimedia?utm_source=linktree_profile_share"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Linktree"
+              className="linktree"
+            >
+              <SiLinktree />
+            </a>
+          </div>
+        </div>
       </div>
 
       {/* Bottom Bar */}

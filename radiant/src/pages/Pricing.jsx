@@ -11,7 +11,7 @@ const Pricing = () => {
   const plans = [
     {
       title: "Excellent Plan",
-      price: "₹4,999 / month",
+      price: "₹3,999 / month",
       tag: "For Small Businesses",
       icon: "✨",
       features: [
