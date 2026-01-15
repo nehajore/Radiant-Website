@@ -59,7 +59,7 @@ const Portfolio = () => {
         <div className="gold-line"></div>
 
         <div className="portfolio-hero-content reveal">
-          <p className="portfolio-badge">📌 Portfolio</p>
+          
           <h1>Our Work</h1>
           <p>
             At Radiant Multimedia, we create digital experiences that help brands

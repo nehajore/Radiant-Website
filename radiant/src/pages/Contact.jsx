@@ -55,7 +55,7 @@ const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
       {/* HERO */}
       <div className="contact-hero">
         <div className="contact-hero-content reveal">
-          <p className="contact-badge">📞 Contact</p>
+         
           <h1>Contact Us</h1>
           <p>
             Let’s connect and grow your business. Fill the form and we will
@@ -102,11 +102,7 @@ const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
             </a>
 
             {/* ✅ small trust strip */}
-            <div className="contact-proof">
-              <span className="proof-chip">✅ Fast Reply</span>
-              <span className="proof-chip">⭐ Premium Support</span>
-              <span className="proof-chip">🚀 Growth Focus</span>
-            </div>
+           
           </div>
 
           {/* RIGHT FORM */}

@@ -36,7 +36,7 @@ const Services = () => {
       {/* HERO / BANNER */}
       <div className="services-hero">
         <div className="services-hero-content reveal">
-          <p className="hero-badge">🚀 Digital Marketing Agency</p>
+          
           <h1>Our Services</h1>
           <p>
             Premium digital solutions designed to help your business grow,

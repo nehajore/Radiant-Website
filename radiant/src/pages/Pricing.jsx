@@ -106,7 +106,7 @@ const Pricing = () => {
       {/* HERO */}
       <div className="pricing-hero">
         <div className="pricing-hero-content reveal">
-          <p className="pricing-badge">💎 Pricing</p>
+         
           <h1>Pricing Plans</h1>
           <p>
             Choose a plan that suits your business goals. All packages can be

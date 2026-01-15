@@ -134,7 +134,7 @@ const Hero = () => {
       <section className="hero">
         <div className="hero-container reveal">
           <div className="hero-text">
-            <p className="hero-badge">🚀 Trusted Digital Growth Partner</p>
+            
 
             <h1 className="hero-title">
               Grow Your Business with{" "}

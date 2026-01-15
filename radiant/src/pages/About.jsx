@@ -2,8 +2,8 @@ import { useEffect } from "react";
 import "./About.css";
 
 // ✅ Import images
-import visionImg from "../assets/images/vision.png";
-import missionImg from "../assets/images/mission.png";
+import visionImg from "../assets/images/vision.jpeg";
+import missionImg from "../assets/images/mission.jpeg";
 
 // ✅ Team images (add these 4 in assets/images/)
 import team1 from "../assets/images/team1.jpeg";
@@ -103,7 +103,7 @@ const About = () => {
       {/* HERO */}
       <div className="about-hero">
         <div className="about-hero-content reveal">
-          <p className="about-badge">✨ About Our Agency</p>
+         
 
           <h1>About Radiant Multimedia</h1>
           <p>
