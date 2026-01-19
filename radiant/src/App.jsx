@@ -8,6 +8,10 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Pricing from "./pages/Pricing";
 import Portfolio from "./pages/Portfolio";
+import Blog from "./pages/Blog";
+import BlogDetails from "./pages/BlogDetails";
+
+
 
 
 function App() {
@@ -21,6 +25,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogDetails />} />
       </Routes>
       
       <Footer />
