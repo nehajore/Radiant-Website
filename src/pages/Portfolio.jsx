@@ -8,6 +8,7 @@ import work3 from "../assets/images/client (3).jpeg";
 import work4 from "../assets/images/client (4).jpeg";
 import work5 from "../assets/images/client (5).jpeg";
 import work6 from "../assets/images/client (6).jpeg";
+import work7 from "../assets/images/client5.png";
 
 const Portfolio = () => {
   const whatsappNumber = "919422547718";
@@ -17,7 +18,7 @@ const Portfolio = () => {
   )}`;
 
   const slides = useMemo(
-    () => [work1, work2, work3, work4, work5, work6],
+    () => [work1, work2, work3, work4, work5, work6,work7],
     []
   );
 
