@@ -10,6 +10,8 @@ import team1 from "../assets/images/team1.jpeg";
 import team2 from "../assets/images/team2.jpeg";
 import team3 from "../assets/images/team3.jpeg";
 import team4 from "../assets/images/team4.jpg";
+import team5 from "../assets/images/team5.jpeg";
+import team6 from "../assets/images/team6.jpeg";
 
 const About = () => {
   const whatsappNumber = "919422547718";
@@ -42,6 +44,11 @@ const About = () => {
       role: "CEO",
       img: team2,
     },
+     {
+      name: "Prakash More",
+      role: "Co-Founder",
+      img: team6,
+    },
     {
       name: "vishal ubale",
       role: "Operation Manager",
@@ -51,6 +58,12 @@ const About = () => {
       name: "Neha Jore",
       role: "Developer",
       img: team4,
+    },
+   
+    {
+      name: "Mr.Akshay Kore",
+      role: "charted Accountatnt",
+      img: team5,
     },
   ];
 

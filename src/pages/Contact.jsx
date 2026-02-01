@@ -76,17 +76,17 @@ const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
             </p>
 
             <div className="info-box">
-              <h4>📍 Location</h4>
+              <h4> Location</h4>
               <p>Pune, Maharashtra</p>
             </div>
 
             <div className="info-box">
-              <h4>📞 Phone</h4>
+              <h4> Phone</h4>
               <p>+91 80870 43258</p>
             </div>
 
             <div className="info-box">
-              <h4>📧 Email</h4>
+              <h4> Email</h4>
               <p>radiantmultimedia5@gmail.com</p>
             </div>
 
