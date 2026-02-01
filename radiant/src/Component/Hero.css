@@ -135,23 +135,38 @@ body {
 }
 
 /* Changing text golden */
+/* Gradient gold changing text */
 .changing-text {
   margin-left: 10px;
   font-weight: 1000;
-  color: var(--gold);
-  text-shadow: 0 2px 0 rgba(180, 83, 9, 0.18),
-    0 8px 18px rgba(251, 191, 36, 0.2);
+
+  /* ✅ Gold gradient (same as cards) */
+  background: linear-gradient(
+    90deg,
+    #a67c00,
+    #a67c00
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  /* ✨ Soft glow for premium look */
+
   animation: goldTextPop 0.45s ease;
 }
 
 @keyframes goldTextPop {
   from {
     transform: translateY(6px);
+    opacity: 0.8;
   }
   to {
     transform: translateY(0);
+    opacity: 1;
   }
 }
+
 
 .hero-para {
   font-size: 18px;
@@ -244,12 +259,13 @@ body {
 .hero-glass-card {
   padding: 24px;
   border-radius: 22px;
-  background: rgba(255, 255, 255, 0.10);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 4px solid transparent;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.10)) padding-box;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(10px);
+  
 }
-
 .hero-glass-card h3 {
   margin: 0 0 8px 0;
   font-size: 20px;
@@ -458,6 +474,7 @@ body {
   background: #ffffff;
   border-top: 1px solid rgba(148, 163, 184, 0.25);
   
+  
 }
 
 .testimonial-center {
@@ -475,6 +492,9 @@ body {
     rgba(255, 255, 255, 1)
   );
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06);
+     border: 4px solid transparent;
+  background: linear-gradient(180deg, #ffffff, #f8fafc) padding-box,
+    linear-gradient(90deg, #a67c00, #ffd777, #fff1c1, #ffd777, #a67c00) border-box;
 }
 
 .testimonial-img {
@@ -599,3 +619,4 @@ body {
     height: 85px;
   }
 }
+

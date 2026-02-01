@@ -14,7 +14,7 @@ import client1 from "../assets/images/client1.jpeg";
 import client2 from "../assets/images/client2.jpeg";
 import client3 from "../assets/images/client3.jpeg";
 import client4 from "../assets/images/client4.jpeg";
-import client4 from "../assets/images/client5.png";
+import client5 from "../assets/images/client5.png";
 
 const Hero = () => {
   const whatsappNumber = "919422547718";
@@ -25,13 +25,38 @@ const Hero = () => {
 
   // ✅ Services list
   const services = [
-    { title: "Digital Marketing", img: serviceDM },
-    { title: "Website Development", img: serviceWeb },
-    { title: "SEO Services", img: serviceSeo },
-    { title: "Social Media Marketing", img: serviceSocial },
-    { title: "Branding & Creative Design", img: serviceBranding },
-    { title: "Paid Ads (Google & Meta)", img: serviceAds },
-  ];
+  {
+    title: "Website Design & Development",
+    img: serviceWeb,
+    desc: "Responsive, fast and SEO-friendly websites for businesses, portfolios and e-commerce with modern UI and smooth user experience."
+  },
+  {
+    title: "SEO Services",
+    img: serviceSeo,
+    desc: "Keyword research, on-page SEO, technical optimization and proven strategies to improve Google rankings and organic traffic."
+  },
+  {
+    title: "Social Media Marketing",
+    img: serviceSocial,
+    desc: "Content creation, reels, creatives, captions and smart page growth strategies to increase engagement and brand visibility."
+  },
+  {
+    title: "Branding & Creative Design",
+    img: serviceBranding,
+    desc: "Logo design, brand identity, posters, brochures and creative visuals for a professional and premium business look."
+  },
+  {
+    title: "Paid Advertising",
+    img: serviceAds,
+    desc: "Google Ads, Facebook and Instagram ad campaigns focused on quality lead generation and fast business growth."
+  },
+  {
+    title: "Digital Marketing",
+    img: serviceDM,
+    desc: "Complete digital growth solutions including SEO, social media, ads and content marketing for online success."
+  }
+];
+
 
   const whyChoose = [
     "Result-Oriented Strategy focused on real leads & growth",
@@ -174,9 +199,9 @@ const Hero = () => {
 
             {/* ✅ Mini proof chips */}
             <div className="hero-proof">
-              <span className="proof-chip">✅ Trusted by Businesses</span>
-              <span className="proof-chip">🚀 Quality Leads</span>
-              <span className="proof-chip">⭐ Premium Support</span>
+              <span className="proof-chip">Trusted by Businesses</span>
+              <span className="proof-chip">Quality Leads</span>
+              <span className="proof-chip"> Premium Support</span>
             </div>
           </div>
 
@@ -225,69 +250,10 @@ const Hero = () => {
                   <img src={service.img} alt={service.title} />
                 </div>
                 <h3>{service.title}</h3>
-                <p>
-                  Premium solutions tailored to your business goals with modern
-                  execution.
-                </p>
+               <p>{service.desc}</p>
+
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* WHY CHOOSE */}
-      <section className="why-choose">
-        <div className="core-container why-grid reveal">
-          <div className="why-left">
-            <h2 className="section-title-light">Why Choose Radiant Multimedia?</h2>
-            <p className="section-subtitle-light left">
-              We don’t just provide services — we build your brand presence,
-              improve visibility and help you convert leads into customers.
-            </p>
-
-            <ul className="why-list">
-              {whyChoose.map((point, i) => (
-                <li key={i}>✅ {point}</li>
-              ))}
-            </ul>
-
-            <a
-              href={whatsappLink}
-              target="_blank"
-              rel="noreferrer"
-              className="why-btn"
-            >
-              Talk to Us on WhatsApp
-            </a>
-          </div>
-
-          <div className="why-right">
-            <div className="why-card glass-card">
-              <h3>Our Promise</h3>
-              <p>
-                Clean design, smart strategy, and measurable results — every
-                single month.
-              </p>
-
-              <div className="why-metrics">
-                <div className="metric">
-                  <h4>SEO</h4>
-                  <p>Rank + Traffic</p>
-                </div>
-                <div className="metric">
-                  <h4>Ads</h4>
-                  <p>Leads + ROI</p>
-                </div>
-                <div className="metric">
-                  <h4>Social</h4>
-                  <p>Growth + Reach</p>
-                </div>
-                <div className="metric">
-                  <h4>Web</h4>
-                  <p>Speed + UX</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
