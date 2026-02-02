@@ -14,7 +14,7 @@ import client1 from "../assets/images/client1.jpeg";
 import client2 from "../assets/images/client2.jpeg";
 import client3 from "../assets/images/client3.jpeg";
 import client4 from "../assets/images/client4.jpeg";
-import client4 from "../assets/images/client5.png";
+import client5 from "../assets/images/client5.png";
 
 const Hero = () => {
   const whatsappNumber = "919422547718";

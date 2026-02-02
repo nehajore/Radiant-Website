@@ -25,7 +25,7 @@ const Pricing = () => {
       title: "Gold Plan",
       price: "₹7,999 / month",
       tag: "Best for Beginners",
-      icon: "🌱",
+     
       features: [
         "Social Media (2 Platforms)",
         "12 Creatives / Month",
@@ -37,7 +37,7 @@ const Pricing = () => {
       title: "Growth Plan",
       price: "₹14,999 / month",
       tag: "Most Popular",
-      icon: "🚀",
+    
       popular: true,
       features: [
         "Social Media (3 Platforms)",
@@ -51,7 +51,7 @@ const Pricing = () => {
       title: "Premium Plan",
       price: "₹24,999 / month",
       tag: "Full Digital Growth",
-      icon: "🏆",
+    
       features: [
         "Complete Digital Marketing",
         "Website + SEO",
