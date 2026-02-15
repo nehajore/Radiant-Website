@@ -25,13 +25,38 @@ const Hero = () => {
 
   // ✅ Services list
   const services = [
-    { title: "Digital Marketing", img: serviceDM },
-    { title: "Website Development", img: serviceWeb },
-    { title: "SEO Services", img: serviceSeo },
-    { title: "Social Media Marketing", img: serviceSocial },
-    { title: "Branding & Creative Design", img: serviceBranding },
-    { title: "Paid Ads (Google & Meta)", img: serviceAds },
-  ];
+  {
+    title: "Website Design & Development",
+    img: serviceWeb,
+    desc: "Responsive, fast and SEO-friendly websites for businesses, portfolios and e-commerce with modern UI and smooth user experience."
+  },
+  {
+    title: "SEO Services",
+    img: serviceSeo,
+    desc: "In-depth keyword research, on-page SEO, technical optimization and proven strategies to improve Google rankings and organic traffic."
+  },
+  {
+    title: "Social Media Marketing",
+    img: serviceSocial,
+    desc: "Creative content creation, reels, posts, captions and smart growth strategies to build strong brand presence and engagement."
+  },
+  {
+    title: "Branding & Creative Design",
+    img: serviceBranding,
+    desc: "Professional logo design, complete brand identity, posters, brochures and creative visuals for a premium business image."
+  },
+  {
+    title: "Paid Advertising",
+    img: serviceAds,
+    desc: "High-converting Google Ads, Facebook and Instagram campaigns focused on lead generation and business growth."
+  },
+  {
+    title: "Digital Marketing",
+    img: serviceDM,
+    desc: "Complete digital growth solutions including SEO, social media, ads and content marketing to boost online visibility."
+  }
+];
+
 
   const whyChoose = [
     "Result-Oriented Strategy focused on real leads & growth",
@@ -173,11 +198,7 @@ const Hero = () => {
             </div>
 
             {/* ✅ Mini proof chips */}
-            <div className="hero-proof">
-              <span className="proof-chip">✅ Trusted by Businesses</span>
-              <span className="proof-chip">🚀 Quality Leads</span>
-              <span className="proof-chip">⭐ Premium Support</span>
-            </div>
+            
           </div>
 
           {/* ✅ Hero Right Card */}
@@ -225,10 +246,8 @@ const Hero = () => {
                   <img src={service.img} alt={service.title} />
                 </div>
                 <h3>{service.title}</h3>
-                <p>
-                  Premium solutions tailored to your business goals with modern
-                  execution.
-                </p>
+              <p>{service.desc}</p>
+
               </div>
             ))}
           </div>

@@ -13,7 +13,7 @@ const Pricing = () => {
       title: "Excellent Plan",
       price: "₹3,999 / month",
       tag: "For Small Businesses",
-      icon: "✨",
+      
       features: [
         "Graphic Design - 12",
         "Business Page setup & Growth",

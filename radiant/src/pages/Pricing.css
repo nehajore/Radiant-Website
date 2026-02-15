@@ -265,21 +265,7 @@
 }
 
 /* icon */
-.plan-icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 18px;
-  display: grid;
-  place-items: center;
-  font-size: 28px;
-  margin-bottom: 12px;
-  background: linear-gradient(
-    135deg,
-    rgba(251, 191, 36, 0.28),
-    rgba(111, 16, 79, 0.10)
-  );
-  border: 1px solid rgba(111, 16, 79, 0.14);
-}
+
 
 .pricing-card h3 {
   font-size: 20px;

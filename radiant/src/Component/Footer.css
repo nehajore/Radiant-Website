@@ -164,14 +164,6 @@
   transition: 0.25s ease;
 }
 
-.service-list.arrow li::before {
-  content: "➤";
-  position: absolute;
-  left: 0;
-  color: var(--gold);
-  font-size: 14px;
-}
-
 .service-list.arrow li:hover {
   color: var(--white);
   transform: translateX(5px);
