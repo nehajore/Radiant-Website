@@ -10,14 +10,15 @@ import Pricing from "./pages/Pricing";
 import Portfolio from "./pages/Portfolio";
 import Blog from "./pages/Blog";
 import BlogDetails from "./pages/BlogDetails";
-
-
-
+import BackToTop from "./Component/BackToTop";
+import "./Component/backToTop.css";
 
 function App() {
   return (
     <>
       <Navbar />
+       <BackToTop />
+      
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/about" element={<About />} />
@@ -27,6 +28,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogDetails />} />
+      
       </Routes>
       
       <Footer />

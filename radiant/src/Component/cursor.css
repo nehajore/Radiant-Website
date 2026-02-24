@@ -1,0 +1,36 @@
+/* =========================
+   CUSTOM CURSOR
+========================= */
+
+/* hide default cursor */
+body {
+  cursor: none;
+}
+
+/* big circle */
+.cursor-ring {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+
+  background: linear-gradient(180deg, #ffffff, #f8fafc) padding-box,
+              linear-gradient(90deg, #a67c00, #ffd777, #fff1c1, #ffd777, #a67c00) border-box;
+
+  border: 2px solid transparent;
+  transform: translate(-50%, -50%);
+}
+
+/* small dot */
+.cursor-dot {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: #d4af37;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}

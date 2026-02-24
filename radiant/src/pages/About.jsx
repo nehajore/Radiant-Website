@@ -45,11 +45,6 @@ const About = () => {
       img: team6,
     },
     {
-      name: "Nandkishor More",
-      role: "CEO",
-      img: team2,
-    },
-    {
       name: "vishal ubale",
       role: "Operation Manager",
       img: team3,
@@ -180,7 +175,7 @@ const About = () => {
             <h3>Our Mission</h3>
             <ul>
               {missions.map((m, i) => (
-                <li key={i}>✅ {m}</li>
+                <li key={i}> {m}</li>
               ))}
             </ul>
           </div>
@@ -198,7 +193,7 @@ const About = () => {
           <div className="why-grid">
             {whyChoose.map((w, i) => (
               <div className="why-item" key={i}>
-                ✅ {w}
+                 {w}
               </div>
             ))}
           </div>

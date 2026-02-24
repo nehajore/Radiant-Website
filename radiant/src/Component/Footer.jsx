@@ -69,9 +69,9 @@ const Footer = () => {
         {/* Column 4: Contact */}
         <div className="footer-contact">
           <h4>Contact Us</h4>
-          <p>📞 +91 94225 47718 / 8087043258</p>
-          <p>📧 radiantmultimedia5@gmail.com</p>
-          <p>📍 Pune, India</p>
+          <p> +91 94225 47718 / 8087043258</p>
+          <p> radiantmultimedia5@gmail.com</p>
+          <p> Pune, India</p>
 
           <h4 className="follow-title">Follow Us</h4>
 

@@ -99,10 +99,10 @@ const Portfolio = () => {
           </p>
 
           <ul className="showcase-list">
-            <li>✅ Website design & development projects</li>
-            <li>✅ Social media creatives and reels strategies</li>
-            <li>✅ Branding, logo designs and identity development</li>
-            <li>✅ Digital marketing growth results (SEO, Leads, Traffic)</li>
+            <li>Website design & development projects</li>
+            <li>Social media creatives and reels strategies</li>
+            <li>Branding, logo designs and identity development</li>
+            <li>Digital marketing growth results (SEO, Leads, Traffic)</li>
           </ul>
 
           <p className="showcase-note">
