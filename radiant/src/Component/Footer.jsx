@@ -63,6 +63,8 @@ const Footer = () => {
             <li>SEO Services</li>
             <li>Social Media Marketing</li>
             <li>Branding & Creative</li>
+            <li>Consulting & Strategy</li>
+            <li>Business Growth Solutions</li>
           </ul>
         </div>
 

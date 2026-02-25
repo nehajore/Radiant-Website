@@ -75,6 +75,7 @@
   margin-bottom: 0px;
   filter: drop-shadow(0px 10px 26px rgba(0,0,0,0.45));
   transition: 0.3s ease;
+  display: block;
 }
 
 .footer-brand img.footer-logo:hover {
@@ -82,9 +83,9 @@
 }
 
 .footer-brand h3 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 1000;
-  margin-bottom: 10px;
+  margin-bottom:0px;
   letter-spacing: 0.3px;
   color: var(--white);
 }

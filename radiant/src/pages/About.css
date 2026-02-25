@@ -201,9 +201,13 @@
   border-radius: 14px;
   font-weight: 1000;
   transition: 0.3s ease;
-
-  background: linear-gradient(135deg, var(--primary), var(--primary2));
   color: #ffffff;
+
+  border: 3px solid transparent; /* ⭐ needed */
+
+  background:
+    linear-gradient(135deg, var(--primary), var(--primary2)) padding-box,
+    linear-gradient(90deg, #a67c00, #ffd777, #fff1c1, #ffd777, #a67c00) border-box;
 
   box-shadow: 0 12px 30px rgba(111, 16, 79, 0.35);
 }

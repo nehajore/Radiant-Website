@@ -189,13 +189,18 @@
 }
 
 .point {
-  background: #fff;
-  border: 1px solid rgba(111,16,79,.22);
+  background: #ffffff;
   padding: 12px;
   border-radius: 12px;
   font-weight: 900;
   color: #470f4e;
-  transition: .3s;
+  transition: 0.3s;
+
+  border: 2px solid transparent; /* ⭐ required */
+
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(90deg, #a67c00, #ffd777, #fff1c1, #ffd777, #a67c00) border-box;
 }
 
 .point:hover {
