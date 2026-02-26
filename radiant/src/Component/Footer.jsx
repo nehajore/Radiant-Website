@@ -56,17 +56,18 @@ const Footer = () => {
 
         {/* Column 3: Services */}
         <div className="footer-links">
-          <h4>Services</h4>
-          <ul className="service-list arrow">
-            <li>Digital Marketing</li>
-            <li>Website Development</li>
-            <li>SEO Services</li>
-            <li>Social Media Marketing</li>
-            <li>Branding & Creative</li>
-            <li>Consulting & Strategy</li>
-            <li>Business Growth Solutions</li>
-          </ul>
-        </div>
+  <h4>Services</h4>
+
+  <ul className="service-list arrow">
+    <li><Link to="/services">Digital Marketing</Link></li>
+    <li><Link to="/services">Website Development</Link></li>
+    <li><Link to="/services">SEO Services</Link></li>
+    <li><Link to="/services">Social Media Marketing</Link></li>
+    <li><Link to="/services">Branding & Creative</Link></li>
+    <li><Link to="/services">Consulting & Strategy</Link></li>
+    <li><Link to="/services">Business Growth Solutions</Link></li>
+  </ul>
+</div>
 
         {/* Column 4: Contact */}
         <div className="footer-contact">
