@@ -1,7 +1,8 @@
-import { Routes, Route, ServerRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom"; // ❌ remove ServerRouter
 import Navbar from "./Component/Navbar";
 import Hero from "./Component/Hero";
 import Footer from "./Component/Footer";
+import ScrollToTop from "./Component/ScrollToTop"; // ✅ add this
 
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -17,8 +18,9 @@ function App() {
   return (
     <>
       <Navbar />
-       <BackToTop />
-      
+      <ScrollToTop />   {/* ✅ THIS FIXES YOUR ISSUE */}
+      <BackToTop />
+
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/about" element={<About />} />
@@ -28,9 +30,8 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogDetails />} />
-      
       </Routes>
-      
+
       <Footer />
     </>
   );

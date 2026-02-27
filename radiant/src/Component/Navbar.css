@@ -15,10 +15,10 @@
 .navbar-container {
   max-width: 1200px;
   margin: auto;
-  height: 90px;              /* ⭐ consistent navbar height */
+  height: 90px;
   padding: 0 20px;
   display: flex;
-  align-items: center;       /* ⭐ vertical center */
+  align-items: center;
 }
 
 /* =========================
@@ -32,7 +32,7 @@
 }
 
 .logo img {
-  height: 120px;              /* ⭐ balanced size */
+  height: 150px;
   width: 120px;
   object-fit: contain;
 }
@@ -46,7 +46,7 @@
 }
 
 /* =========================
-   NAV LINKS
+   NAV LINKS (DESKTOP)
 ========================= */
 .nav-links {
   margin-left: auto;
@@ -63,92 +63,6 @@
   transition: 0.25s ease;
 }
 
-/* hover underline animation */
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 2px;
-  background: #16a34a;
-  transition: width 0.25s ease;
-}
-
-.nav-links a:hover {
-  color: #16a34a;
-}
-
-.nav-links a:hover::after {
-  width: 100%;
-}
-
-/* =========================
-   NAVBAR BASE
-========================= */
-.navbar {
-  position: sticky;
-  top: 0;
-  background: #ffffff;
-  border-bottom: 1px solid #e5e7eb;
-  z-index: 1000;
-}
-
-/* =========================
-   CONTAINER
-========================= */
-.navbar-container {
-  max-width: 1200px;
-  margin: auto;
-  height: 90px;              /* ⭐ consistent navbar height */
-  padding: 0 20px;
-  display: flex;
-  align-items: center;       /* ⭐ vertical center */
-}
-
-/* =========================
-   LOGO
-========================= */
-.logo a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  gap: 6px;
-}
-
-.logo img {
-  height: 120px;              /* ⭐ balanced size */
-  width: 120px;
-  object-fit: contain;
-}
-
-.logo span {
-  font-size: 15px;
-  font-weight: 900;
-  color: #16a34a;
-  letter-spacing: 0.5px;
-  line-height: 1;
-}
-
-/* =========================
-   NAV LINKS
-========================= */
-.nav-links {
-  margin-left: auto;
-  display: flex;
-  gap: 26px;
-  align-items: center;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #111827;
-  font-weight: 700;
-  position: relative;
-  transition: 0.25s ease;
-}
-
-/* hover underline animation */
 .nav-links a::after {
   content: "";
   position: absolute;
@@ -171,9 +85,6 @@
 /* =========================
    CTA BUTTON
 ========================= */
-/* =========================
-   CTA BUTTON (GREEN + GOLD BORDER)
-========================= */
 .cta {
   color: #ffffff !important;
   padding: 10px 18px;
@@ -181,18 +92,16 @@
   font-weight: 800;
   transition: 0.25s ease;
   display: inline-block;
-
   border: 4px solid transparent;
-
   background:
     linear-gradient(#16a34a, #16a34a) padding-box,
     linear-gradient(90deg, #a67c00, #ffd777, #fff1c1, #ffd777, #a67c00) border-box;
 }
 
 .cta:hover {
-  background: #16a34a;          /* keep same bg */
+  background: #16a34a;
   transform: translateY(-2px);
-  border-color: #facc15;        /* lighter gold on hover */
+  border-color: #facc15;
 }
 
 /* =========================
@@ -206,7 +115,7 @@
 }
 
 /* =========================
-   MOBILE
+   MOBILE MENU
 ========================= */
 @media (max-width: 768px) {
 
@@ -216,6 +125,7 @@
 
   .logo img {
     height: 60px;
+    width: auto;
   }
 
   .hamburger {
@@ -223,64 +133,34 @@
   }
 
   .nav-links {
-    position: absolute;
+    position: fixed;
     top: 80px;
-    left: 0;
-    width: 100%;
+    right: 0;
+    left: auto;
+
+    width: 50%;
+    max-width: 300px;
+    height: calc(100vh - 80px);
+
     background: #ffffff;
     flex-direction: column;
-    gap: 18px;
-    padding: 22px;
+    gap: 20px;
+    padding: 30px 24px;
+
     display: none;
-    border-bottom: 1px solid #e5e7eb;
+    border-left: 1px solid #e5e7eb;
+    box-shadow: -8px 0 30px rgba(0,0,0,0.08);
+    z-index: 1000;
   }
 
   .nav-links.active {
     display: flex;
   }
 }
-
-/* =========================
-   HAMBURGER
-========================= */
-.hamburger {
-  display: none;
-  font-size: 26px;
-  cursor: pointer;
-  margin-left: auto;
-}
-
-/* =========================
-   MOBILE
-========================= */
-@media (max-width: 768px) {
-
-  .navbar-container {
-    height: 80px;
-  }
-
-  .logo img {
-    height: 60px;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  .nav-links {
-    position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
-    background: #ffffff;
-    flex-direction: column;
-    gap: 18px;
-    padding: 22px;
-    display: none;
-    border-bottom: 1px solid #e5e7eb;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(2px);
+  z-index: 900;
 }

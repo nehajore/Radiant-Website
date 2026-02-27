@@ -70,8 +70,8 @@
 }
 
 .footer-brand img.footer-logo {
-  height: 150px;  /* ✅ bigger logo */
-  width: 180px;
+  height: 200px;  /* ✅ bigger logo */
+  width: 200px;
   margin-bottom: 0px;
   filter: drop-shadow(0px 10px 26px rgba(0,0,0,0.45));
   transition: 0.3s ease;
