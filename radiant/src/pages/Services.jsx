@@ -1,11 +1,29 @@
 import "./Services.css";
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Services = () => {
+  const location = useLocation();
+
   const whatsappNumber = "918087043258";
   const message = "Hi Radiant Multimedia, I want to know about your services.";
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
+  /* ⭐ Scroll to section when coming from footer link */
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.querySelector(location.hash);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100);
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
+
+  /* ⭐ Reveal animation */
   useEffect(() => {
     const elements = document.querySelectorAll(".reveal");
 
@@ -39,8 +57,8 @@ const Services = () => {
         </div>
       </div>
 
-      {/* 1 — LEFT */}
-      <div className="services-video-section">
+      {/* 1 — SEO */}
+      <div id="seo" className="services-video-section">
         <div className="services-video-grid reveal">
           <div className="video-box">
             <video className="services-video" src="/digital marketing solution.mp4" autoPlay muted loop playsInline controls />
@@ -60,8 +78,8 @@ const Services = () => {
         </div>
       </div>
 
-      {/* 2 — RIGHT */}
-      <div className="services-video-section alt-bg">
+      {/* 2 — Branding */}
+      <div id="branding" className="services-video-section alt-bg">
         <div className="services-video-grid reverse reveal">
           <div className="video-box">
             <video className="services-video" src="/Branding& creative design.mp4" autoPlay muted loop playsInline controls />
@@ -81,8 +99,8 @@ const Services = () => {
         </div>
       </div>
 
-      {/* 3 — LEFT */}
-      <div className="services-video-section">
+      {/* 3 — Web */}
+      <div id="web" className="services-video-section">
         <div className="services-video-grid reveal">
           <div className="video-box">
             <video className="services-video" src="/modernvideo.mp4" autoPlay muted loop playsInline controls />
@@ -102,8 +120,8 @@ const Services = () => {
         </div>
       </div>
 
-      {/* 4 — RIGHT */}
-      <div className="services-video-section alt-bg">
+      {/* 4 — SMM */}
+      <div id="smm" className="services-video-section alt-bg">
         <div className="services-video-grid reverse reveal">
           <div className="video-box">
             <video className="services-video" src="/social media and marketing ads.mp4" autoPlay muted loop playsInline controls />
@@ -123,8 +141,8 @@ const Services = () => {
         </div>
       </div>
 
-      {/* 5 — LEFT */}
-      <div className="services-video-section">
+      {/* 5 — Consulting */}
+      <div id="consulting" className="services-video-section">
         <div className="services-video-grid reveal">
           <div className="video-box">
             <video className="services-video" src="/Consulting & Strategy.mp4" autoPlay muted loop playsInline controls />
@@ -144,8 +162,8 @@ const Services = () => {
         </div>
       </div>
 
-      {/* 6 — RIGHT (FEATURED) */}
-      <div className="services-video-section alt-bg featured-service">
+      {/* 6 — Growth */}
+      <div id="growth" className="services-video-section alt-bg featured-service">
         <div className="services-video-grid reverse reveal">
           <div className="video-box">
             <video className="services-video" src="/Business Growth Solutions.mp4" autoPlay muted loop playsInline controls />
