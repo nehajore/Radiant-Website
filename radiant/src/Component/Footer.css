@@ -237,6 +237,25 @@
   position: relative;
   z-index: 2;
 }
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+/* Circle Background */
+.contact-icon-img {
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+
+  background: #ffffff;   /* white circle background */
+  border-radius: 50%;    /* makes it circle */
+  object-fit: contain;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
 /* =========================
    ✅ RESPONSIVE

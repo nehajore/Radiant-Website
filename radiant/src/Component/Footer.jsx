@@ -11,6 +11,10 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
+import mail from "../assets/icons/mail.jpeg";
+import location from "../assets/icons/location.jpeg";
+import phone from "../assets/icons/phone.jpeg";
+
 import { SiLinktree } from "react-icons/si";
 
 const Footer = () => {
@@ -70,10 +74,22 @@ const Footer = () => {
 
         {/* Column 4: Contact */}
         <div className="footer-contact">
-          <h4>Contact Us</h4>
-          <p> +91 94225 47718 / 8087043258</p>
-          <p> radiantmultimedia5@gmail.com</p>
-          <p> Pune, India</p>
+  <h4>Contact Us</h4>
+
+  <p className="contact-item">
+    <img src={phone} alt="Phone" className="contact-icon-img" />
+    +91 94225 47718 / 8087043258
+  </p>
+
+  <p className="contact-item">
+    <img src={mail} alt="Email" className="contact-icon-img" />
+    radiantmultimedia5@gmail.com
+  </p>
+
+  <p className="contact-item">
+    <img src={location} alt="Location" className="contact-icon-img" />
+    Pune, India
+  </p>
 
           <h4 className="follow-title">Follow Us</h4>
 
