@@ -1,0 +1,265 @@
+/* =========================
+   CAREERS PAGE
+========================= */
+
+.careers-page {
+  width: 100%;
+  background: #ffffff;
+  color: #111827;
+  font-family: "Poppins", sans-serif;
+}
+
+/* =========================
+   THEME COLORS
+========================= */
+
+:root {
+  --primary: #6f104f;
+  --primary2: #470f4e;
+  --dark: #1d0927;
+  --dark2: #260d33;
+  --text: #f1f5f9;
+  --border: rgba(255,255,255,0.12);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.careers-hero {
+  padding: 95px 20px;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+
+  background: radial-gradient(
+    circle at top,
+    #6f104f 0%,
+    #470f4e 25%,
+    #260d33 55%,
+    #1d0927 100%
+  );
+}
+
+/* stars animation */
+
+.careers-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    radial-gradient(2px 2px at 20% 30%, rgba(255,255,255,0.8) 50%, transparent 51%),
+    radial-gradient(1px 1px at 40% 80%, rgba(255,255,255,0.5) 50%, transparent 51%),
+    radial-gradient(1px 1px at 60% 20%, rgba(255,255,255,0.7) 50%, transparent 51%),
+    radial-gradient(2px 2px at 80% 60%, rgba(255,255,255,0.6) 50%, transparent 51%),
+    radial-gradient(1px 1px at 10% 70%, rgba(255,255,255,0.4) 50%, transparent 51%);
+
+  background-size: 200px 200px;
+  opacity: 0.55;
+  pointer-events: none;
+
+  animation: starsMove 30s linear infinite;
+}
+
+/* glow effect */
+
+.careers-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(circle at 50% 20%, rgba(255,0,255,0.22), transparent 60%),
+    radial-gradient(circle at 40% 85%, rgba(255,0,200,0.18), transparent 65%),
+    radial-gradient(circle at 70% 60%, rgba(255,0,255,0.15), transparent 70%);
+
+  filter: blur(22px);
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+/* stars movement */
+
+@keyframes starsMove {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-200px); }
+}
+
+.careers-hero-content {
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+  z-index: 5;
+}
+
+.careers-hero h1 {
+  font-size: 42px;
+  font-weight: 1000;
+  margin-bottom: 12px;
+}
+
+.careers-hero p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(255,255,255,0.85);
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.careers-container {
+  max-width: 1250px;
+  margin: auto;
+  padding: 70px 20px;
+}
+
+/* section titles */
+
+.section-title {
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 16px;
+  color: #475569;
+  max-width: 850px;
+  margin: 0 auto 40px;
+  line-height: 1.8;
+}
+
+/* =========================
+   JOB GRID
+========================= */
+
+.jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* =========================
+   JOB CARD
+========================= */
+
+.job-card {
+
+  position: relative;
+
+  border: 4px solid transparent;
+
+  background:
+    linear-gradient(180deg, #ffffff, #f8fafc) padding-box,
+    linear-gradient(90deg, #a67c00, #ffd777, #fff1c1, #ffd777, #a67c00) border-box;
+
+  border-radius: 22px;
+  padding: 24px;
+
+  box-shadow: 0 18px 45px rgba(0,0,0,0.06);
+
+  transition: 0.35s ease;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.job-card:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 30px 70px rgba(0,0,0,0.12),
+    0 0 15px rgba(255,215,119,0.35);
+}
+
+/* title */
+
+.job-card h3 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  color: #470f4e;
+}
+
+/* description */
+
+.job-card p {
+  font-size: 15px;
+  color: #374151;
+  line-height: 1.7;
+}
+
+/* internship list */
+
+.job-card ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.job-card ul li {
+  margin-bottom: 6px;
+  color: #334155;
+  font-size: 14px;
+}
+
+/* apply button */
+
+.apply-btn {
+  margin-top: auto;
+
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  padding: 12px 18px;
+  border-radius: 12px;
+
+  font-weight: 700;
+  color: #ffffff;
+
+  background: linear-gradient(
+    135deg,
+    var(--primary),
+    var(--primary2)
+  );
+
+  transition: 0.3s ease;
+}
+
+.apply-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+
+  .jobs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .jobs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .careers-hero h1 {
+    font-size: 30px;
+  }
+
+  .careers-container {
+    padding: 55px 16px;
+  }
+
+}

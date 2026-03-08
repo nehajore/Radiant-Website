@@ -13,7 +13,7 @@
    CONTAINER
 ========================= */
 .navbar-container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
   height: 90px;
   padding: 0 20px;
@@ -51,7 +51,7 @@
 .nav-links {
   margin-left: auto;
   display: flex;
-  gap: 26px;
+  gap: 19px;
   align-items: center;
 }
 
@@ -61,6 +61,8 @@
   font-weight: 700;
   position: relative;
   transition: 0.25s ease;
+  white-space: nowrap;
+  font-size: 15px;
 }
 
 .nav-links a::after {
@@ -153,7 +155,7 @@
 @media (max-width: 768px) {
 
   .navbar-container {
-    height: 80px;
+    height: 70px;
   }
 
   .logo img {

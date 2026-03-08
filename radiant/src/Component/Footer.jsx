@@ -11,9 +11,9 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
-import mail from "../assets/icons/mail.jpeg";
-import location from "../assets/icons/location.jpeg";
-import phone from "../assets/icons/phone.jpeg";
+import mail from "../assets/icons/mail.png";
+import location from "../assets/icons/location.png";
+import phone from "../assets/icons/phone.png";
 
 import { SiLinktree } from "react-icons/si";
 
@@ -55,6 +55,7 @@ const Footer = () => {
             <li><Link to="/portfolio">Portfolio</Link></li>
             <li><Link to="/pricing">Pricing</Link></li>
             <li><Link to="/contact">Contact</Link></li>
+             <li><Link to="/Careers">Careers</Link></li>
           </ul>
         </div>
 

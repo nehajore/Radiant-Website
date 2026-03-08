@@ -54,6 +54,7 @@ const Navbar = () => {
           <Link to="/pricing" onClick={() => setOpen(false)}>Pricing</Link>
           <Link to="/contact" onClick={() => setOpen(false)}>Contact</Link>
           <Link to="/blog" onClick={() => setOpen(false)}>Blog</Link>
+           <Link to="/careers"onClick={() => setOpen(false)}>Careers</Link>
 
           <a
             href={whatsappLink}
